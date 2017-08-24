@@ -1,0 +1,24 @@
+{
+  "name": "node-lint",
+  "version": "0.0.1",
+  "description": "Tools used to lint external files",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremy-miller/node-lint"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "dockerfile_lint": "^0.x.x",
+    "eslint": "^4.x.x",
+    "eslint-config-airbnb-base": "^11.x.x",
+    "eslint-config-prettier": "^2.x.x",
+    "eslint-plugin-import": "^2.x.x",
+    "eslint-plugin-prettier": "^2.x.x",
+    "htmllint": "^0.x.x",
+    "markdownlint": "^0.x.x",
+    "prettier": "^1.x.x",
+    "stylelint": "^8.x.x"
+  }
+}
