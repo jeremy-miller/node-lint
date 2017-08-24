@@ -18,6 +18,7 @@
     "eslint-plugin-prettier": "^2.x.x",
     "htmllint": "^0.x.x",
     "markdownlint": "^0.x.x",
+    "markdownlint-cli": "^0.x.x",
     "prettier": "^1.x.x",
     "stylelint": "^8.x.x"
   }
