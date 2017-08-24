@@ -1,6 +1,9 @@
 FROM node:latest
-RUN mkdir -p /usr/src/config
-WORKDIR /usr/src/config
-COPY package.json /usr/src/config
-RUN npm install -g
-COPY . /usr/src/config
+RUN mkdir -p /usr/src
+WORKDIR /usr/src
+RUN npm install -g dockerfile_lint eslint \
+    eslint-config-airbnb-base eslint-config-prettier \
+    eslint-plugin-import eslint-plugin-prettier \
+    htmllint markdownlint markdownlint-cli \
+    prettier stylelint
+COPY . /usr/src
