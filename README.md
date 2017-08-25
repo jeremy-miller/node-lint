@@ -21,10 +21,17 @@ then executes the linting tool on the files within the mounted directory.  By de
 working directory (`$PWD`) as the host directory to be mounted, however, this can be modified.  Note it must be
 an *absolute* path.
 
+The working directory inside the Docker image is `/usr/src`, which is also where the configuration files for the linting
+tools are stored.  This means the `app/` path must be prepended in the commands when specifying source code file locations.
+
 To use these tools, you must first pull the latest Docker image: ```docker pull jeremymiller/node-lint```
+
+### Dockerfilelint
+To use dockerfilelint, execute the following command:
+```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint dockerfile_lint -r .dockerfilelintrc -f app/Dockerfile```
 
 ### markdownlint
 To use markdownlint, execute the following command:
-```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint markdownlint <.md files to be linted>```
+```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint markdownlint app/<.md files to be linted>```
 
 If no files are specified, the mounted directory and all of its sub-directories will be searched for `.md` files to lint.
