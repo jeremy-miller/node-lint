@@ -3,7 +3,7 @@ Docker image used to lint external source code files.  This image uses NodeJS as
 Configuration files are included as well.
 
 ## Currently Installed Tools
-- [dockerfile_lint](https://www.npmjs.com/package/dockerfilelint)
+- [Dockerfilelint](https://www.npmjs.com/package/dockerfilelint)
 - [ESLint](https://www.npmjs.com/package/eslint)
   - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
   - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
