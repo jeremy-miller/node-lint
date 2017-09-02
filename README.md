@@ -10,6 +10,7 @@ Configuration files are included as well.
   - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
   - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
 - [htmllint](https://www.npmjs.com/package/htmllint)
+  - [htmllint-cli](https://www.npmjs.com/package/htmllint-cli)
 - [markdownlint](https://www.npmjs.com/package/markdownlint)
   - [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli)
 - [Prettier](https://www.npmjs.com/package/prettier) (via ESLint)
