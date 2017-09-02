@@ -31,8 +31,22 @@ To use these tools, you must first pull the latest Docker image: ```docker pull 
 To use dockerfilelint, execute the following command:
 ```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint dockerfile_lint -r .dockerfilelintrc -f app/Dockerfile```
 
+### ESLint
+To use ESLint, execute the following command:
+```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint eslint lib/** static/js/** test/** --fix```
+
+### htmllint
+To use htmllint, execute the following command:
+```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint htmllint index.html```
+
+If no files are specified, the mounted directory and all of its sub-directories will be searched for `.html` files to lint.
+
 ### markdownlint
 To use markdownlint, execute the following command:
 ```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint markdownlint app/<.md files to be linted>```
 
 If no files are specified, the mounted directory and all of its sub-directories will be searched for `.md` files to lint.
+
+### stylelint
+To use stylelint, execute the following command:
+```docker run -it --rm -v $PWD:/usr/src/app jeremymiller/node-lint stylelint static/css/**/*.css```
