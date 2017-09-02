@@ -15,6 +15,7 @@ Configuration files are included as well.
   - [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli)
 - [Prettier](https://www.npmjs.com/package/prettier) (via ESLint)
 - [stylelint](https://www.npmjs.com/package/stylelint)
+  - [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
 
 ## Usage
 This image mounts a directory containing the source code files to be linted inside the container at `/usr/src/app`,

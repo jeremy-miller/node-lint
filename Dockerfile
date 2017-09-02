@@ -5,5 +5,5 @@ RUN npm install -g dockerfile_lint eslint \
     eslint-config-airbnb-base eslint-config-prettier \
     eslint-plugin-import eslint-plugin-prettier \
     htmllint htmllint-cli markdownlint markdownlint-cli \
-    prettier stylelint
+    prettier stylelint stylelint-config-standard
 COPY . /usr/src
