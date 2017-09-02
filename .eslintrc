@@ -7,8 +7,9 @@
     "prettier"
   ],
   "rules": {
-    "block-spacing": [2, "never"],
     "no-console": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": ["error", {
+      "bracketSpacing": false
+    }]
   }
 }
